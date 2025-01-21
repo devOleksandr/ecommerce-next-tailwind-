@@ -1,10 +1,10 @@
-import {Header} from "@/modules/Layout";
+import {HomePage} from "@/modules/Home";
+import {Layout} from "@/modules/Layout";
 
 export default function Home() {
-  return (
-     <section>
-        <Header/>
-
-     </section>
-  );
+	return (
+		<Layout>
+			<HomePage/>
+		</Layout>
+	);
 }

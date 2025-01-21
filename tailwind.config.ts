@@ -17,7 +17,9 @@ export default {
 				'black-main': '#333333',
 				'gray': '#666666',
 				'gray-light': '#666666',
-				'gold': '#B88E2F'
+				'gold': '#B88E2F',
+				'gold-hover': '#9a7829',
+				'gold-light': '#FFF3E3',
 			},
 		},
 		fontSize: {

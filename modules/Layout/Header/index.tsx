@@ -27,8 +27,8 @@ export const Header = () => {
 	const pathname = usePathname()
 
 	return (
-		<header className="w-full colord bg-white shadow">
-			<div className="container flex justify-between items-center py-7">
+		<header className="w-full bg-white shadow">
+			<div className="container flex justify-between items-center py-5">
 				<Link href="/" className="max-w-[185px] w-full">
 					<LogoIcon/>
 				</Link>
