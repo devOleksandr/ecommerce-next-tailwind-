@@ -21,6 +21,9 @@ export default {
 				'gold-hover': '#9a7829',
 				'gold-light': '#FFF3E3',
 			},
+			fontFamily: {
+				sans: ['var(--font-poppins)', 'sans-serif'], // Use the Poppins font as default
+			},
 		},
 		fontSize: {
 			xs: '0.75rem',
@@ -43,12 +46,12 @@ export default {
 	},
 	plugins: [plugin(function ({addBase, theme}: PluginAPI) {
 		addBase({
-			'h1': {fontSize: theme('fontSize.h1'), fontWeight: '900', lineHeight: '1.2', color: theme('extend.colors.black-main')},
-			'h2': {fontSize: theme('fontSize.h2'), fontWeight: '900', lineHeight: '1.2', color: theme('extend.colors.black-main')},
-			'h3': {fontSize: theme('fontSize.h3'), fontWeight: '900', lineHeight: '1.2', color: theme('extend.colors.black-main')},
-			'h4': {fontSize: theme('fontSize.h4'), fontWeight: '900', lineHeight: '1.2', color: theme('extend.colors.black-main')},
-			'h5': {fontSize: theme('fontSize.h5'), fontWeight: '900', lineHeight: '1.2', color: theme('extend.colors.black-main')},
-			'h6': {fontSize: theme('fontSize.h6'), fontWeight: '900', lineHeight: '1.2', color: theme('extend.colors.black-main')},
+			'h1': {fontSize: theme('fontSize.h1'), fontWeight: '700', lineHeight: '1.2', color: theme('colors.black-main')},
+			'h2': {fontSize: theme('fontSize.h2'), fontWeight: '700', lineHeight: '1.2', color: theme('colors.black-main')},
+			'h3': {fontSize: theme('fontSize.h3'), fontWeight: '700', lineHeight: '1.2', color: theme('colors.black-main')},
+			'h4': {fontSize: theme('fontSize.h4'), fontWeight: '700', lineHeight: '1.2', color: theme('colors.black-main')},
+			'h5': {fontSize: theme('fontSize.h5'), fontWeight: '700', lineHeight: '1.2', color: theme('colors.black-main')},
+			'h6': {fontSize: theme('fontSize.h6'), fontWeight: '700', lineHeight: '1.2', color: theme('colors.black-main')},
 		})
 	})],
 } satisfies Config;

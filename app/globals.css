@@ -7,7 +7,7 @@
         @apply max-w-[1268px] px-4 mx-auto w-full
     }
 
-    .button{
+    .button {
         @apply text-white font-semibold uppercase py-[25px] px-[16px] min-w-[220px] inline-flex justify-center items-center text-center bg-gold transition-all hover:bg-gold-hover
     }
 }
