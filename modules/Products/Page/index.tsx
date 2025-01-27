@@ -7,8 +7,6 @@ const breadcrumbsData = {
   links: [
     {name: 'Home', value: '/'},
     {name: 'Shop', value: '/shop'},
-    {name: 'Shop', value: '/shop'},
-    {name: 'Shop', value: '/shop'},
   ]
 }
 
@@ -18,12 +16,16 @@ export const Page = () => {
     <section>
       <Breadcrumbs title={breadcrumbsData.title} links={breadcrumbsData.links}/>
       {/*<HeadActions/>*/}
-      {/*<div className="w-full">*/}
-      {/*  <aside className="min-w-[200px]"></aside>*/}
-      {/*  <div className="w-full grid grid-cols-4">*/}
-      {/*    <Card/>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+      <div className="container flex my-8">
+        <aside className="min-w-[300px]"></aside>
+        <div className="w-full grid grid-cols-3 gap-4">
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+        </div>
+      </div>
     </section>
   )
 }
