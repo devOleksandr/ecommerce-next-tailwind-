@@ -1,10 +1,7 @@
-import {Header} from "@/modules/Layout";
+import {ProductsPage} from "@/modules/Products";
 
 export default function Shop() {
-	return (
-		<section>
-			<Header/>
-
-		</section>
-	);
+  return (
+    <ProductsPage/>
+  );
 }
