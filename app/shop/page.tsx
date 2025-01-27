@@ -1,7 +1,10 @@
 import {ProductsPage} from "@/modules/Products";
+import {Layout} from "@/modules/Layout";
 
 export default function Shop() {
   return (
-    <ProductsPage/>
+    <Layout>
+      <ProductsPage/>
+    </Layout>
   );
 }
