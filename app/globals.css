@@ -10,4 +10,12 @@
     .button {
         @apply text-white font-semibold uppercase py-[25px] px-[16px] min-w-[220px] inline-flex justify-center items-center text-center bg-gold transition-all hover:bg-gold-hover
     }
+
+    .newsletter-input {
+        @apply focus:border-b-2 text-sm placeholder:text-gray-light border-b-2 border-gray  p-1 transition-all focus:border-transparent hover:placeholder-gold-hover
+    }
+
+    .newsletter-button {
+        @apply border-b-2 text-black border-black hover:border-gold-hover hover:text-gold-hover
+    }
 }
