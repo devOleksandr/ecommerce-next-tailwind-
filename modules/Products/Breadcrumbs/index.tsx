@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ArrowIcon from "@/public/icons/svg/dashicons_arrow-down-alt2.svg"
+import ArrowIconComponent from "@/public/icons/svg/dashicons_arrow-down-alt2.svg?component"
 import Image from "next/image";
 import bannerPic from "@/public/home/banner/bg.png";
 
@@ -25,9 +25,9 @@ export const Breadcrumbs = (props: IBreadcrumbs) => {
 				<ul className="flex items-center">
 					{
 						links.map((item, index) => (
-							<li className="flex items-center mr-3 group">
+							<li className="flex items-center mr-3 group" key={index}>
 								<Link href={item.value} className="pr-2 group-hover:underline">{item.name}</Link>
-								<ArrowIcon className="group-last:hidden"/>
+								<ArrowIconComponent className="group-last:hidden"/>
 							</li>
 						))
 					}

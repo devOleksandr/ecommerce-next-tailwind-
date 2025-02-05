@@ -3,7 +3,7 @@ import Image from "next/image";
 import {Rating} from "@/components/UI/Rating";
 import tempImg from "@/public/icons/temp/temp-product.png"
 import Link from "next/link";
-import BasketIcon from "@/public/icons/svg/card-basket.svg"
+import BasketIcon from "@/public/icons/svg/card-basket.svg?component"
 
 export const Card = () => {
 

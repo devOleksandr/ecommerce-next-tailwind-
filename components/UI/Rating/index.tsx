@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import CommentIcon from "@/public/icons/svg/conversation-svgrepo-com.svg"
+import CommentIcon from "@/public/icons/svg/conversation-svgrepo-com.svg?component"
 
 interface IRating {
   value: number,

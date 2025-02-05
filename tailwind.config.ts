@@ -17,9 +17,11 @@ export default {
 				'black-main': '#333333',
 				'gray': '#666666',
 				'gray-light': '#9F9F9F',
+				'gray-light-2': '#898989',
 				'gold': '#B88E2F',
 				'gold-hover': '#9a7829',
 				'gold-light': '#FFF3E3',
+				'milk': '#FAF3EA'
 			},
 			fontFamily: {
 				sans: ['var(--font-poppins)', 'sans-serif'], // Use the Poppins font as default
