@@ -8,5 +8,6 @@ export interface ICartItem {
 
 export interface ICartState{
 	items: ICartItem[];
-	totalPrice: number
+	totalPrice: number,
+	displayCartFlag: boolean
 }

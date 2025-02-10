@@ -1,7 +1,9 @@
 "use client"
 import LogoIcon from "@/public/icons/logo.svg?component";
 import Link from "next/link";
-import { usePathname  } from 'next/navigation'
+import {usePathname} from 'next/navigation'
+import {useAppDispatch} from "@/store/store";
+import {cartToggle} from "@/modules/Cart/redux/cartSlice";
 
 
 const links: Array<{ link: string, label: string }> = [
@@ -25,6 +27,7 @@ const links: Array<{ link: string, label: string }> = [
 
 export const Header = () => {
 	const pathname = usePathname()
+	const dispatch = useAppDispatch()
 
 	return (
 		<header className="w-full bg-white shadow">
@@ -38,14 +41,15 @@ export const Header = () => {
 							return (
 								<li className="pr-[72px] last:pr-0" key={index}>
 									<Link href={item.link}
-									      className={`${pathname === item.link? 'text-gold': 'text-base'} text-base hover:text-gold transition-all`}>{item.label}</Link>
+									      className={`${pathname === item.link ? 'text-gold' : 'text-base'} text-base hover:text-gold transition-all`}>{item.label}</Link>
 								</li>
 							)
 						})
 					}
 				</ul>
 				<div className="flex items-center">
-					<div className="p-1 hover:cursor-pointer transition-all group">
+					<div className="p-1 hover:cursor-pointer transition-all group"
+					     onClick={() => dispatch(cartToggle(true))}>
 						<BasketIcon/>
 					</div>
 				</div>
