@@ -1,5 +1,4 @@
 import {Breadcrumbs} from "@/modules/Products/Breadcrumbs";
-import {HeadActions} from "@/modules/Products/HeadActions";
 import {Card} from "@/modules/Products/Card";
 
 const breadcrumbsData = {
