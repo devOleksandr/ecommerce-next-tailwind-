@@ -21,7 +21,8 @@ export default {
 				'gold': '#B88E2F',
 				'gold-hover': '#9a7829',
 				'gold-light': '#FFF3E3',
-				'milk': '#FAF3EA'
+				'milk': '#FAF3EA',
+				'white2': '#F9F1E7'
 			},
 			fontFamily: {
 				sans: ['var(--font-poppins)', 'sans-serif'], // Use the Poppins font as default
