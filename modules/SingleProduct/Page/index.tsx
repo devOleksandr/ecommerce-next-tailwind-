@@ -6,6 +6,13 @@ import {SizesRadioButton} from "@/components/UI/SizesRadioButton";
 import {ColoredRadioButton} from "@/components/UI/ColoredRadioButton";
 import {QuantityInput} from "@/components/UI/QuantityInput";
 import {Information} from "@/modules/SingleProduct/Information";
+import image1 from "@/public/product/1.webp";
+import image2 from "@/public/product/2.webp";
+import image3 from "@/public/product/3.webp";
+import image4 from "@/public/product/4.webp";
+import image5 from "@/public/product/5.webp";
+import image6 from "@/public/product/6.webp";
+import image7 from "@/public/product/7.webp";
 
 const breadcrumbsData = {
   title: 'Shop',
@@ -15,6 +22,19 @@ const breadcrumbsData = {
   ]
 }
 
+const tempData = {
+
+  images: [image1, image2, image3, image4, image5, image6, image7],
+  name: 'Gore-Tex Salomon',
+  shortDescription: 'Salomon',
+  sku: '195751267335',
+  review: {
+    totalCount: 0,
+    totalRating: 0,
+  }
+
+}
+
 export const Page = () => {
 
   return (
@@ -22,7 +42,7 @@ export const Page = () => {
       <Breadcrumbs title={breadcrumbsData.title} links={breadcrumbsData.links}/>
       <div className="container">
         <div className="w-full grid grid-cols-2 gap-10 my-8">
-          <Gallery/>
+          <Gallery data={tempData.images}/>
           <div>
             <h2 className="mb-2">Asgaard sofa</h2>
             <Rating value={3} action={() => console.log("action")}/>

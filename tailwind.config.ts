@@ -20,6 +20,7 @@ export default {
 				'gray-light-2': '#898989',
 				'gold': '#B88E2F',
 				'gold-hover': '#9a7829',
+				'gold-transparent': 'rgba(154,120,41,0.78)',
 				'gold-light': '#FFF3E3',
 				'milk': '#FAF3EA',
 				'white2': '#F9F1E7'
