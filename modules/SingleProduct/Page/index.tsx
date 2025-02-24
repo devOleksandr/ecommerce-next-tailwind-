@@ -38,7 +38,7 @@ const tempData = {
 export const Page = () => {
 
   return (
-    <section>
+    <section className="pb-10">
       <Breadcrumbs title={breadcrumbsData.title} links={breadcrumbsData.links}/>
       <div className="container">
         <div className="w-full grid grid-cols-2 gap-10 my-8">

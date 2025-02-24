@@ -47,7 +47,7 @@ export const Footer = () => {
 
 	// TODO: check h t disable outline style f input
 	return (
-		<footer className="w-full bg-white border-t border-gray-light">
+		<footer className="w-full bg-white border-t border-gray-light-2">
 			<div className="container pt-[48px] ">
 				<div className="w-full flex items-start pb-[48px]">
 					<div className="mr-[72px] max-w-[285px]">
@@ -100,8 +100,8 @@ export const Footer = () => {
 						<button className="newsletter-button">SUBSCRIBE</button>
 					</form>
 				</div>
-				<div className="w-full py-[36px] border-t border-gray-light">
-					<p>2023 furino. All rights reverved</p>
+				<div className="w-full py-[12px] border-t border-gray-light-2">
+					<p className="text-xs text-gray-light-2">2023 furino. All rights reverved</p>
 				</div>
 			</div>
 		</footer>

@@ -12,14 +12,14 @@ export const Information = () => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-center items-center py-7">
+      <div className="flex justify-center items-center py-3 bg-gray-light-3 mb-8">
         {
           tabs.map((item, index) => {
             return (
               <button
                 key={index}
                 onClick={() => setActiveTab(item)}
-                className={`text-h5  mr-8 last:mr-0 hover:text-black-main ${activeTab === item ? 'text-black-main' : 'text-gray-light-2'}`}>{item}</button>
+                className={`text-h6  mr-8 last:mr-0 hover:text-black-main ${activeTab === item ? 'text-black-main' : 'text-gray-light-2'}`}>{item}</button>
             )
           })
         }

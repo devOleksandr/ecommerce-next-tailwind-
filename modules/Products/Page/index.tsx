@@ -1,5 +1,6 @@
 import {Breadcrumbs} from "@/modules/Products/Breadcrumbs";
 import {Card} from "@/modules/Products/Card";
+import {Filter} from "@/modules/Products/Filter";
 
 const breadcrumbsData = {
   title: 'Shop',
@@ -16,8 +17,10 @@ export const Page = () => {
       <Breadcrumbs title={breadcrumbsData.title} links={breadcrumbsData.links}/>
       {/*<HeadActions/>*/}
       <div className="container flex my-8">
-        <aside className="min-w-[300px]"></aside>
-        <div className="w-full grid grid-cols-3 gap-4">
+        <aside className="min-w-[300px]">
+          <Filter/>
+        </aside>
+        <div className="w-full grid grid-cols-4 gap-4">
           <Card/>
           <Card/>
           <Card/>
