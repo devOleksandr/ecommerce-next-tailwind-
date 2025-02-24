@@ -2,6 +2,7 @@
 
 import {informationEnums} from "@/modules/SingleProduct/Information/informationEnums";
 import {useState} from "react";
+import {Review} from "@/modules/SingleProduct/Review";
 
 
 const tabs = [informationEnums.spec, informationEnums.description, informationEnums.review]
@@ -45,7 +46,7 @@ export const Information = () => {
             guitar-influenced leather strap enables easy and stylish travel.</p>
         </div>
         <div className={`${activeTab === informationEnums.review ? "block" : "hidden"}`}>
-          review
+          <Review/>
         </div>
       </div>
     </div>
